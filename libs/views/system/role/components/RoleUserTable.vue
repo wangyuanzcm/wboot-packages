@@ -32,9 +32,9 @@
 </template>
 <script lang="ts" setup>
   import { ref, watch, unref } from 'vue';
-  import { BasicTable, useTable, TableAction } from '/src/components/Table';
-  import { BasicDrawer, useDrawer, useDrawerInner } from '/src/components/Drawer';
-  import { useModal } from '/src/components/Modal';
+  import { BasicTable, useTable, TableAction } from '/@/components/Table';
+  import { BasicDrawer, useDrawer, useDrawerInner } from '/@/components/Drawer';
+  import { useModal } from '/@/components/Modal';
   import UserDrawer from '../../user/UserDrawer.vue';
   import UseSelectModal from './UseSelectModal.vue';
   import { userList, deleteUserRole, batchDeleteUserRole, addUserRole } from '../role.api';

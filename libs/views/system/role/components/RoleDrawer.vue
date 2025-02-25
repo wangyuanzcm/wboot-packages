@@ -5,9 +5,9 @@
 </template>
 <script lang="ts" setup>
   import { ref, computed, unref, useAttrs } from 'vue';
-  import { BasicForm, useForm } from '/src/components/Form';
-  import { BasicDrawer, useDrawerInner } from '/src/components/Drawer';
-  import { BasicTree, TreeItem } from '/src/components/Tree';
+  import { BasicForm, useForm } from '/@/components/Form';
+  import { BasicDrawer, useDrawerInner } from '/@/components/Drawer';
+  import { BasicTree, TreeItem } from '/@/components/Tree';
   import { formSchema } from '../role.data';
   import { saveOrUpdateRole } from '../role.api';
   // 声明Emits

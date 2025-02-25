@@ -40,17 +40,17 @@
 <script lang="ts" name="system-dict" setup>
   //ts语法
   import { ref, computed, unref } from 'vue';
-  import { BasicTable, TableAction } from '/src/components/Table';
-  import { useDrawer } from '/src/components/Drawer';
-  import { useModal } from '/src/components/Modal';
+  import { BasicTable, TableAction } from '/@/components/Table';
+  import { useDrawer } from '/@/components/Drawer';
+  import { useModal } from '/@/components/Modal';
   import DictItemList from './components/DictItemList.vue';
   import DictModal from './components/DictModal.vue';
   import DictRecycleBinModal from './components/DictRecycleBinModal.vue';
-  import { useMessage } from '/src/hooks/web/useMessage';
-  import { removeAuthCache, setAuthCache } from '/src/utils/auth';
+  import { useMessage } from '/@/hooks/web/useMessage';
+  import { removeAuthCache, setAuthCache } from '/@/utils/auth';
   import { columns, searchFormSchema } from './dict.data';
   import { list, deleteDict, batchDeleteDict, getExportUrl, getImportUrl, refreshCache, queryAllDictItems } from './dict.api';
-  import { DB_DICT_DATA_KEY } from '/src/enums/cacheEnum';
+  import { DB_DICT_DATA_KEY } from '/@/enums/cacheEnum';
   import { useUserStore } from '/@/store/modules/user';
 
   const { createMessage } = useMessage();

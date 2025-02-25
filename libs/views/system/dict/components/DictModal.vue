@@ -5,8 +5,8 @@
 </template>
 <script lang="ts" setup>
   import { ref, computed, unref } from 'vue';
-  import { BasicModal, useModalInner } from '/src/components/Modal';
-  import { BasicForm, useForm } from '/src/components/Form';
+  import { BasicModal, useModalInner } from '/@/components/Modal';
+  import { BasicForm, useForm } from '/@/components/Form';
   import { formSchema } from '../dict.data';
   import { saveOrUpdateDict } from '../dict.api';
   // 声明Emits

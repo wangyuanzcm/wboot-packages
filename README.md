@@ -32,6 +32,10 @@ npm run sync
 说明：每次运行同步命令的时候会同步最新版本的组件库，并且创建对应的版本分支，同时master分支为最新的版本分支
 项目中引用的话需要引用指定的版本分支
 
+由于开源代码仓库不规范，需要手动打补丁，替换对应引用路径
+1. import { DB_DICT_DATA_KEY } from '/src/enums/cacheEnum'; 替换引用路径中的/src/为/@/，最终结果为：import { DB_DICT_DATA_KEY } from '/@/enums/cacheEnum';
+
+
 子模块操作方法：https://my.oschina.net/emacs_8915127/blog/17571658
 
 项目中添加子仓库方法：
