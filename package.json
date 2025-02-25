@@ -1,0 +1,13 @@
+{
+  "name": "wboot-packages",
+  "version": "3.7.3",
+  "description": "wboot-vue3中引用的第三方包和依赖, 同步更新自[jeect-boot](https://github.com/jeecgboot/JeecgBoot/tree/v3.7.3/jeecgboot-vue3/src)",
+  "main": "index.js",
+  "scripts": {
+    "sync": "node sync.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
