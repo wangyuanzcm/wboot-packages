@@ -145,16 +145,16 @@ export function useCustomSelection(
     },
     {
       immediate: true,
-      deep: true,
+      deep: true
     }
   );
   // update-end--author:liaozhiyang---date:20240306---for：【QQYUN-8390】部门人员组件点击重置未清空（selectedRowKeys.value=[]，watch没监听到加deep）
 
   /**
-   * 2024-03-06
-   * liaozhiyang
-   * 判断是否同一个数组 (引用地址，长度，元素位置信息相同才是同一个数组。数组元素只有字符串)
-   */
+  * 2024-03-06
+  * liaozhiyang
+  * 判断是否同一个数组 (引用地址，长度，元素位置信息相同才是同一个数组。数组元素只有字符串)
+  */
   function sameArray(a, b) {
     if (a === b) {
       if (a.length === b.length) {
@@ -223,7 +223,7 @@ export function useCustomSelection(
     const el = bodyEl.value?.querySelector('tbody.ant-table-tbody tr.ant-table-row') as HTMLDivElement;
     if (el) {
       // update-begin--author:liaozhiyang---date:20241111---for：【issues/7442】basicTable从默认切换到宽松紧凑时多选框显示异常
-      nextTick(() => (rowHeight.value = el.offsetHeight));
+      nextTick(() => rowHeight.value = el.offsetHeight);
       // update-end--author:liaozhiyang---date:20241111---for：【issues/7442】basicTable从默认切换到宽松紧凑时多选框显示异常
     }
   }
@@ -314,7 +314,7 @@ export function useCustomSelection(
             setTimeout(() => {
               emitChange('all');
               // update-begin--author:liaozhiyang---date:20230811---for：【QQYUN-5687】批量选择，提示成功后，又来一个提示
-              setTimeout(() => resolve(), 0);
+              setTimeout(() =>resolve(), 0);
               // update-end--author:liaozhiyang---date:20230811---for：【QQYUN-5687】批量选择，提示成功后，又来一个提示
             }, 500);
           }
@@ -729,3 +729,4 @@ function flattenData<RecordType>(data: RecordType[] | undefined, childrenColumnN
 
   return list;
 }
+

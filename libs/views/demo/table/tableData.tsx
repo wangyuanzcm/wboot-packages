@@ -209,7 +209,6 @@ export function getMergeHeaderColumns(): BasicColumn[] {
         { text: 'Male', value: 'male', children: [] },
         { text: 'Female', value: 'female', children: [] },
       ],
-
       customCell: renderContent('no'),
     },
     {

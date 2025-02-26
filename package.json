@@ -4,11 +4,15 @@
   "description": "wboot-vue3中引用的第三方包和依赖, 同步更新自[jeect-boot](https://github.com/jeecgboot/JeecgBoot/tree/v3.7.3/jeecgboot-vue3/src)",
   "main": "index.js",
   "scripts": {
-    "patch":"node ./patch.js",
-    "sync": "node sync.js",
+    "patch": "node ./scripts/patch.js",
+    "sync": "node ./scripts/sync.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.3.0",
+    "simple-git": "^3.27.0"
+  }
 }

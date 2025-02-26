@@ -1,31 +1,23 @@
 # wboot-packages
  wboot-vue3中引用的第三方包和依赖, 同步更新自[jeect-boot](https://github.com/jeecgboot/JeecgBoot/tree/v3.7.3/jeecgboot-vue3/src)
 
-包目录：
-开源组件库
-- libs
-    - api
-    - assets
-    - components
-    - design
-    - directives
-    - enums
-    - hooks
-    - layouts
-    - locales
-    - logics
-    - router
-    - settings
-    - store
-    - utils
-    - views
-自定义公共组件
-- common
+项目结构
+```
+wboot-packages
+├─ build    jeecg-boot源build文件夹
+├─ common   通用文件夹，用于存放通用组件，函数，资源的文件夹
+├─ libs     jeecg-boot-vue3中的源src文件夹内容
+├─ package.json
+├─ patchs   补丁文件夹，用于替换libs中需要修改部分文件
+├─ README.md
+└─ scripts  脚本文件
+
+```
 
 同步命令：
 
 ```
-npm run sync
+npm run sync xxx(需要同步的文件夹目录绝对路径)
 
 ```
 
@@ -34,6 +26,15 @@ npm run sync
 
 由于开源代码仓库不规范，需要手动打补丁，替换对应引用路径
 1. import { DB_DICT_DATA_KEY } from '/src/enums/cacheEnum'; 替换引用路径中的/src/为/@/，最终结果为：import { DB_DICT_DATA_KEY } from '/@/enums/cacheEnum';
+
+
+Q&A：
+1. 为什么不直接同步git仓库
+git仓库中文件太多，脚本操作容易发生下载失败的情况，反而直接copy更方便一点
+2. 为什么打patch，而不是直接修改文件内容
+
+
+
 
 
 子模块操作方法：https://my.oschina.net/emacs_8915127/blog/17571658

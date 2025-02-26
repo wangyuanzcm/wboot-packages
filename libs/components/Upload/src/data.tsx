@@ -92,7 +92,6 @@ export function createActionColumn(handleRemove: Function): BasicColumn {
           onClick: handleRemove.bind(null, record),
         },
       ];
-
       // if (checkImgType(record)) {
       //   actions.unshift({
       //     label: t('component.upload.preview'),

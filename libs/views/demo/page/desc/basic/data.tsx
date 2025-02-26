@@ -36,7 +36,6 @@ export const refundSchema: DescItem[] = [
     label: '子订单',
   },
 ];
-
 export const personSchema: DescItem[] = [
   {
     field: 'b1',
@@ -99,7 +98,6 @@ export const refundTableSchema: BasicColumn[] = [
     dataIndex: 't6',
   },
 ];
-
 export const refundTimeTableSchema: BasicColumn[] = [
   {
     title: '时间',
